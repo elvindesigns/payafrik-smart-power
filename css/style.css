@@ -201,3 +201,56 @@ footer {
   color: white;
   font-size: 12px;
 }
+
+/* CREATE ORDER PAGES */
+#orderbg {
+  background-image: url("../img/bg2.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.tabs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs button {
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #3b3ed330;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+}
+.tabs .active {
+  background-color: #ffa500 !important;
+  color: black;
+}
+#orderbg form {
+  margin-top: 40px;
+}
+#orderbg form p {
+  color: orange;
+}
+#orderbg form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 94, 255, 0.62);
+  border-radius: 8px;
+  color: white;
+  outline-color: orange;
+  /* max-width: 350px; */
+}
+#orderbg form button {
+  background-color: orange;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
