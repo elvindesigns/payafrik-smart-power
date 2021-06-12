@@ -338,7 +338,7 @@ footer {
 /* REVIEW ORDER */
 #reviewContent {
   margin-top: 40px;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 320px);
   /* background-color: red; */
   overflow: scroll;
 }
@@ -367,4 +367,14 @@ footer {
   border-radius: 5px;
   border: none;
   width: 100%;
+}
+#makeChanges {
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+#makeChanges:hover {
+  color: orange;
 }
