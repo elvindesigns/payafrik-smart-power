@@ -31,13 +31,33 @@
   padding-bottom: 30px;
 }
 .header-content {
-  padding-top: 60px;
 }
-.holder {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+#welcomeNote {
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+#welcomeNote > p {
+  font-size: 17px;
+}
+#welcomeNote #insertedNumber {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+#welcomeNote #goback {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#welcomeNote #goback:hover {
+  color: black;
+}
+.divider {
+  background-color: white;
+  height: 1px;
+  width: 100%;
 }
 #logo {
   width: 100%;
@@ -59,6 +79,15 @@
 #form > p {
   margin-top: 20px;
   color: white;
+}
+#form #phone {
+  margin-top: 20px;
+  color: white;
+}
+#form #password {
+  margin-top: 20px;
+  color: white;
+  display: none;
 }
 #form input {
   width: 100%;
@@ -203,6 +232,35 @@ footer {
 }
 
 /* CREATE ORDER PAGES */
+.nav {
+  padding-top: 60px;
+}
+.navLink {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.navLink li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+.navLink li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 13px;
+}
+.navLink li a:hover {
+  color: orange;
+}
+.navLink li img {
+  height: 15px;
+  display: inline-block;
+  padding-top: 3px;
+  margin-left: 5px;
+}
 #orderbg {
   background-image: url("../img/bg2.jpeg");
   background-size: cover;
@@ -246,6 +304,27 @@ footer {
   color: white;
   outline-color: orange;
   /* max-width: 350px; */
+}
+#orderbg form select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 94, 255, 0.62);
+  border-radius: 8px;
+  color: white;
+  outline-color: orange;
+  background: rgba(0, 0, 0, 0.2) url("../img/down-chevron.png") 92% center/12px
+    no-repeat !important;
+  /* background: url("../img/down-chevron.png") 97% center no-repeat !important; */
+  background-size: 20px;
+  appearance: none;
+}
+#orderbg form #amount {
+  background: rgba(0, 0, 0, 0.2) url("../img/naira.png") 20px center/18px
+    no-repeat !important;
+  padding-left: 50px;
 }
 #orderbg form button {
   background-color: orange;

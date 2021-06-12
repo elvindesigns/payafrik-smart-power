@@ -10,18 +10,46 @@
 </head>
 <body>
     <div id="header">
+        <div class="container">
+            <div class="row nav">
+                <div class="col">
+                    <img id="logo" src="./img/logo.png" alt="">
+                </div>
+                <div class="col navLink d-none d-sm-none d-md-block">
+                    <ul>
+                        <li><a href="#">Buy Electricity</a></li>
+                        <li><a href="#">Purchase History</a></li>
+                        <li> <a href="#">Contact Us</a></li>
+                        <li>|</li>
+                        <li>08137331445 <img  src="./img/down-chevron.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="container header-content">
             <div class="row">
                 <div class="col-md-6 col-sm-12 holder">
-                    <img id="logo" src="./img/logo.png" alt="">
+                    
                     <div id="cta">
                         <img src="./img/cta.png" alt="">
                     </div>
                     <div id="form">
-                        <p>Start with a Phone Number</p>
-                        <input type="text" placeholder="0800 - 000 - 0000">
-                        <div>
-                            <button onclick="startOrder()">Buy Electricity</button>
+                        <div id="phone">
+                            <p>Start with a Phone Number</p>
+                             <input id="phoneInput" type="text" placeholder="0800 - 000 - 0000">
+                        </div>
+                        <div id="welcomeNote">
+                            <p>Glad to have you back</p>
+                            <p id="insertedNumber">00000000000</p>
+                            <div class="divider"></div>
+                            <p id="goback">No, this not my number, GO BACK.</p>
+                        </div>
+                        <div id="password">
+                            <p>Enter your Password to continue</p>
+                        <input id="passwordField" type="password" placeholder="********">
+                        </div>
+                        <div >
+                            <button id="submitButton" onclick="startOrder()">Buy Electricity</button>
                         </div>
                         <div class="row miniButtonsHolder">
                             <div class="">

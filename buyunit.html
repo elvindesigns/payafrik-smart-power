@@ -14,7 +14,20 @@
         <div class="container header-content">
             <div class="row">
                 <div class="col">
-                    <img id="logo" src="./img/logo.png" alt="">
+                    <div class="row nav">
+                        <div class="col">
+                            <img id="logo" src="./img/logo.png" alt="">
+                        </div>
+                        <div class="col navLink d-none d-sm-none d-md-block">
+                            <ul>
+                                <li><a href="#">Buy Electricity</a></li>
+                                <li><a href="#">Purchase History</a></li>
+                                <li> <a href="#">Contact Us</a></li>
+                                <li>|</li>
+                                <li>08137331445 <img  src="./img/down-chevron.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-3 d-none d-sm-none d-md-block">
                             <div class="tabs">
@@ -28,11 +41,26 @@
                         <div class="col-md-4">
                             <form action="">
                                 <p>Meter Number</p>
-                                <input type="text">
+                                <input type="text" placeholder="Enter your meter number">
                                 <p>Select your DISCO</p>
-                                <input type="text">
+                                <select name="cars" id="cars">
+                                    <option value="volvo">AEDC</option>
+                                    <option value="saab">BEDC</option>
+                                    <option value="opel">EEDC</option>
+                                    <option value="audi">ENEDC</option>
+                                    <option value="audi">IBEDC</option>
+                                    <option value="audi">IE (IBADAN ELECTRIC)</option>
+                                    <option value="audi">JEDC</option>
+                                    <option value="audi">KEDC</option>
+                                    <option value="audi">KEDCO</option>
+                                    <option value="audi">PHCN</option>
+                                    <option value="audi">PHED</option>
+                                    <option value="audi">YEDC</option>
+                                  </select>
+                                <p>Email Address</p>
+                                <input type="email">
                                 <p>How much Electricity do you want to buy</p>
-                                <input type="text">
+                                <input id="amount" type="text">
                                 <button>Continue</button>
                             </form>
                         </div>
@@ -42,5 +70,15 @@
         </div>
    
  </div>
+ <footer>
+    <div class="container" id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="./img/logo.png" alt="">
+                <p>©2021 PayAfrik Smart Power. PayAfrik. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
