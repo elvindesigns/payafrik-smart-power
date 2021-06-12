@@ -266,7 +266,7 @@ footer {
   background-size: cover;
   width: 100%;
   padding-bottom: 50px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 .tabs {
   margin-top: 40px;
@@ -288,13 +288,13 @@ footer {
   background-color: #ffa500 !important;
   color: black;
 }
-#orderbg form {
+#orderbg .orderForm {
   margin-top: 40px;
 }
-#orderbg form p {
+#orderbg .orderForm p {
   color: orange;
 }
-#orderbg form input {
+#orderbg .orderForm input {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -306,7 +306,7 @@ footer {
   outline-color: orange;
   /* max-width: 350px; */
 }
-#orderbg form select {
+#orderbg .orderForm select {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -322,15 +322,49 @@ footer {
   background-size: 20px;
   appearance: none;
 }
-#orderbg form #amount {
+#orderbg .orderForm #amount {
   background: rgba(0, 0, 0, 0.2) url("../img/naira.png") 20px center/18px
     no-repeat !important;
   padding-left: 50px;
 }
-#orderbg form button {
+#orderbg .orderForm button {
   background-color: orange;
   padding: 15px 20px;
   border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+/* REVIEW ORDER */
+#reviewContent {
+  margin-top: 40px;
+  height: calc(100vh - 250px);
+  /* background-color: red; */
+  overflow: scroll;
+}
+#reviewContent .darkBox {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#reviewContent .lightBox {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#reviewContent .content {
+  color: White;
+  font-size: 25px;
+}
+#reviewContent .label {
+  color: orange;
+}
+#reviewContent .smalltext {
+  font-size: 18px;
+}
+#payButton {
+  margin-top: 10px;
+  background-color: orange;
+  padding: 15px 20px;
+  border-radius: 5px;
   border: none;
   width: 100%;
 }

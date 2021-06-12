@@ -38,3 +38,7 @@ function startOrder(){
     }
     
 }
+
+function reviewOrder() {
+    window.location = "./reviewOrder.html"
+}

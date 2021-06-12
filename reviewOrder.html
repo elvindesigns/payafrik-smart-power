@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Smart Power | Create Order</title>
+    <title>Smart Power | Review Order</title>
 </head>
 <body>
  <div id="orderbg">
@@ -31,38 +31,46 @@
                     <div class="row">
                         <div class="col-md-3 d-none d-sm-none d-md-block">
                             <div class="tabs">
-                                <button class="active">Order Electricity</button>
-                                <button class="">Review Your Order</button>
+                                <button class="">Order Electricity</button>
+                                <button class="active">Review Your Order</button>
                                 <button class="">Payment Information</button>
                                 <button class="">Complete Order</button>
                             </div>
                             
                         </div>
                         <div class="col-md-4">
-                            <div class="orderForm">
-                                <p>Meter Number</p>
-                                <input type="text" placeholder="Enter your meter number">
-                                <p>Select your DISCO</p>
-                                <select name="cars" id="cars">
-                                    <option value="volvo">AEDC</option>
-                                    <option value="saab">BEDC</option>
-                                    <option value="opel">EEDC</option>
-                                    <option value="audi">ENEDC</option>
-                                    <option value="audi">IBEDC</option>
-                                    <option value="audi">IE (IBADAN ELECTRIC)</option>
-                                    <option value="audi">JEDC</option>
-                                    <option value="audi">KEDC</option>
-                                    <option value="audi">KEDCO</option>
-                                    <option value="audi">PHCN</option>
-                                    <option value="audi">PHED</option>
-                                    <option value="audi">YEDC</option>
-                                  </select>
-                                <p>Email Address</p>
-                                <input type="email">
-                                <p>How much Electricity do you want to buy</p>
-                                <input id="amount" type="text">
-                                <button onclick="reviewOrder()">Continue</button>
+                            <div id="reviewContent">
+                                <div class="darkBox">
+                                    <p class="label">Meter Number</p>
+                                    <p class="content">45700456986</p>
+                                </div>
+                                <div class="lightBox">
+                                    <p class="label">Name</p>
+                                    <p class="content">OSAWOTA .ANDI</p>
+                                </div>
+                                <div class="darkBox">
+                                    <p class="label">Address</p>
+                                    <p class="content smalltext">HOUSE 7, 6932, ROAD ADKAN ESTATE, GWARIMPA Und St. Vendors Center</p>
+                                </div>
+                                <div class="lightBox">
+                                    <p class="label">Phone</p>
+                                    <p class="content">08137331445</p>
+                                </div>
+                                <div class="darkBox">
+                                    <p class="label">AMOUNT</p>
+                                    <p class="content">N2000</p>
+                                </div>
+                                <div class="lightBox">
+                                    <p class="label">SERVICE CHARGE</p>
+                                    <p class="content">N100</p>
+                                </div>
+                                <div class="darkBox">
+                                    <p class="label">TOTAL</p>
+                                    <p class="content">N2100</p>
+                                </div>
+                                
                             </div>
+                            <button id="payButton" onclick="">Pay N2,100</button>
                         </div>
                     </div>
                 </div>
@@ -80,6 +88,6 @@
         </div>
     </div>
 </footer>
-<script src="./js/script.js"></script>
+
 </body>
 </html>
